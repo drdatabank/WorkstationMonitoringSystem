@@ -38,6 +38,7 @@ namespace DiskMonitoringLibrary
             return results;
         }
 
+        [Obsolete("This method is under reconstruction. Don't use it.", false)]
         internal static void GetVolumesDetailsByDeviceIoControl(string volumeName)
         {
             IntPtr hVolume = CreateFile(
